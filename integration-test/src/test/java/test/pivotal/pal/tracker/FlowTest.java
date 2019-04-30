@@ -27,6 +27,7 @@ public class FlowTest {
 
     private String registrationServerUrl(String path) {
         return "http://localhost:8883" + path;
+    //    return "http://localhost:8761" + path;
     }
 
     private String allocationsServerUrl(String path) {
