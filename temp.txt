@@ -1,0 +1,180 @@
+Getting env variables for app tracker-backlog in org dianapardy91.gmail.com / space sandbox as dianapardy91@gmail.com...
+OK
+
+System-Provided:
+{
+ "VCAP_SERVICES": {
+  "p-circuit-breaker-dashboard": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "amqp": {
+      "dashboard_url": "https://pivotal-rabbitmq.sys.evans.pal.pivotal.io/#/login/7281c201-aac7-4f2d-9306-8e239aeeca19/e1jno83j1ef6aa5u88pf0g1997",
+      "hostname": "10.0.8.4",
+      "hostnames": [
+       "10.0.8.4"
+      ],
+      "http_api_uri": "https://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@pivotal-rabbitmq.sys.evans.pal.pivotal.io/api/",
+      "http_api_uris": [
+       "https://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@pivotal-rabbitmq.sys.evans.pal.pivotal.io/api/"
+      ],
+      "password": "e1jno83j1ef6aa5u88pf0g1997",
+      "protocols": {
+       "amqp": {
+        "host": "10.0.8.4",
+        "hosts": [
+         "10.0.8.4"
+        ],
+        "password": "e1jno83j1ef6aa5u88pf0g1997",
+        "port": 5672,
+        "ssl": false,
+        "uri": "amqp://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4:5672/bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa",
+        "uris": [
+         "amqp://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4:5672/bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa"
+        ],
+        "username": "7281c201-aac7-4f2d-9306-8e239aeeca19",
+        "vhost": "bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa"
+       },
+       "management": {
+        "host": "10.0.8.4",
+        "hosts": [
+         "10.0.8.4"
+        ],
+        "password": "e1jno83j1ef6aa5u88pf0g1997",
+        "path": "/api/",
+        "port": 15672,
+        "ssl": false,
+        "uri": "http://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4:15672/api/",
+        "uris": [
+         "http://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4:15672/api/"
+        ],
+        "username": "7281c201-aac7-4f2d-9306-8e239aeeca19"
+       }
+      },
+      "ssl": false,
+      "uri": "amqp://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4/bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa",
+      "uris": [
+       "amqp://7281c201-aac7-4f2d-9306-8e239aeeca19:e1jno83j1ef6aa5u88pf0g1997@10.0.8.4/bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa"
+      ],
+      "username": "7281c201-aac7-4f2d-9306-8e239aeeca19",
+      "vhost": "bf985b2d-bbd7-4d6a-92e1-d8469fc11eaa"
+     },
+     "dashboard": "https://hystrix-33db9b80-bdce-451e-a574-e381cd2afd81.apps.evans.pal.pivotal.io",
+     "stream": "https://turbine-33db9b80-bdce-451e-a574-e381cd2afd81.apps.evans.pal.pivotal.io"
+    },
+    "instance_name": "tracker-circuit-breaker-dashboard",
+    "label": "p-circuit-breaker-dashboard",
+    "name": "tracker-circuit-breaker-dashboard",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "circuit-breaker",
+     "hystrix-amqp",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p-identity": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "auth_domain": "https://p-identity.login.sys.evans.pal.pivotal.io",
+     "client_id": "056e4f88-2ec1-438e-8391-a4def341721e",
+     "client_secret": "36fe7201-8763-4abc-87a7-e66847ace589"
+    },
+    "instance_name": "tracker-sso",
+    "label": "p-identity",
+    "name": "tracker-sso",
+    "plan": "p-identity",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [],
+    "volume_mounts": []
+   }
+  ],
+  "p-service-registry": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "access_token_uri": "https://p-spring-cloud-services.uaa.sys.evans.pal.pivotal.io/oauth/token",
+     "client_id": "p-service-registry-ff41e93a-e095-4611-a562-513f61456408",
+     "client_secret": "NZE0Ejpbz5hH",
+     "uri": "https://eureka-3fdeb549-c580-4499-ac76-9b324df8128c.apps.evans.pal.pivotal.io"
+    },
+    "instance_name": "tracker-service-registry",
+    "label": "p-service-registry",
+    "name": "tracker-service-registry",
+    "plan": "standard",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "eureka",
+     "discovery",
+     "registry",
+     "spring-cloud"
+    ],
+    "volume_mounts": []
+   }
+  ],
+  "p.mysql": [
+   {
+    "binding_name": null,
+    "credentials": {
+     "hostname": "q-n3s3y1.q-g52854.bosh",
+     "jdbcUrl": "jdbc:mysql://q-n3s3y1.q-g52854.bosh:3306/service_instance_db?user=6dbcf21af01c4bae8e91e2ac14285fe1\u0026password=wemm4pfl0msi62tz\u0026useSSL=false",
+     "name": "service_instance_db",
+     "password": "wemm4pfl0msi62tz",
+     "port": 3306,
+     "uri": "mysql://6dbcf21af01c4bae8e91e2ac14285fe1:wemm4pfl0msi62tz@q-n3s3y1.q-g52854.bosh:3306/service_instance_db?reconnect=true",
+     "username": "6dbcf21af01c4bae8e91e2ac14285fe1"
+    },
+    "instance_name": "tracker-backlog-database",
+    "label": "p.mysql",
+    "name": "tracker-backlog-database",
+    "plan": "db-medium",
+    "provider": null,
+    "syslog_drain_url": null,
+    "tags": [
+     "mysql"
+    ],
+    "volume_mounts": []
+   }
+  ]
+ }
+}
+
+{
+ "VCAP_APPLICATION": {
+  "application_id": "a135fc3b-cbca-4103-b488-5b61a0d7064a",
+  "application_name": "tracker-backlog",
+  "application_uris": [
+   "backlog-pal-camarillo.apps.evans.pal.pivotal.io"
+  ],
+  "application_version": "f1829153-7ed9-434e-8bdd-6069372b94cf",
+  "cf_api": "https://api.sys.evans.pal.pivotal.io",
+  "limits": {
+   "disk": 1024,
+   "fds": 16384,
+   "mem": 1024
+  },
+  "name": "tracker-backlog",
+  "space_id": "590fa188-fa93-4b76-b1fe-6128ba914942",
+  "space_name": "sandbox",
+  "uris": [
+   "backlog-pal-camarillo.apps.evans.pal.pivotal.io"
+  ],
+  "users": null,
+  "version": "f1829153-7ed9-434e-8bdd-6069372b94cf"
+ }
+}
+
+User-Provided:
+GRANT_TYPE: client_credentials
+JBP_CONFIG_OPEN_JDK_JRE: { jre: { version: 11.+ } }
+
+No running env variables have been set
+
+No staging env variables have been set
+
